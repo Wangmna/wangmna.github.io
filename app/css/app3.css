@@ -1,0 +1,264 @@
+ul,ol,h1,h2,h3,h4,h5,h6,body,input,article{
+    margin:0;padding:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+img{
+    border:none;display:block;
+}
+body{
+    font-family:"宋体";font-size:12px;color:#333;
+    background:#f2f2f2;
+}
+html{
+    font-size:100px;
+}
+*{
+    box-sizing:border-box;
+}
+.box{
+    width:100%;height:4.76rem;
+    background:#29a6dc url(../image/image1.png)2.8rem 2.17rem;
+    background-repeat:no-repeat;
+    background-size:2.09rem 1.41rem;
+    font-size:36px;
+    color:#fff;
+    text-align:center;
+    padding-top:0.78rem;
+}
+.box-img{
+    width:0.46rem;
+    height:0.46rem;
+    position:absolute;
+    left:0.27rem;top:0.78rem;
+}
+.sign{
+    width:100%;
+    background:#f2f2f2;
+    font-size:24px;
+    color:#0a196b;
+    text-align:center;
+    margin-top:1.46rem;
+    margin-bottom:0.2rem;
+}
+.writer{
+    width:100%;
+    font-size:24px;
+    color:#0a196b;
+    padding-left:5.54rem;
+    margin-bottom:1rem;
+}
+.input input{
+    width:6.18rem;
+    height:0.88rem;
+    margin-left:0.68rem;
+    border:0.02rem solid #29a6dc;
+    border-radius:0.44rem;
+    font-size:28px;
+    color:#999999;
+    padding-left:1.23rem;
+    background:url(../image/image2.png)0.45rem 0.22rem;
+    background-repeat:no-repeat;
+    background-size:0.44rem 0.44rem;
+    margin-bottom:0.38rem;
+}
+.input1 input{
+    width:6.18rem;
+    height:0.88rem;
+    margin-left:0.68rem;
+    border:0.02rem solid #29a6dc;
+    border-radius:0.44rem;
+    font-size:28px;
+    color:#999999;
+    padding-left:1.23rem;
+    background:url(../image/image3.png)0.45rem 0.22rem;
+    background-repeat:no-repeat;
+    background-size:0.44rem 0.44rem;
+    margin-bottom:0.36rem;
+}
+.other{
+    width:100%;
+    margin-bottom:0.96rem;
+}
+.key{
+    margin-left:1.2rem;
+    float:left;
+}
+.img{
+    width:0.25rem;
+    height:0.25rem;
+    float:left;
+    margin-right:0.2rem;
+}
+.key1{
+    float:left;
+    font-size:22px;
+}
+.key2{
+    margin-right:1.2rem;
+    float:right;
+}
+.input2{
+    width:100%;
+    height:auto;
+    position:relative;
+    margin-bottom:1.12rem;
+}
+.input2 input{
+    width:5.64rem;
+    height:0.7rem;
+    margin-left:0.98rem;
+    background:#3abffd;
+    border-radius:0.35rem;
+    font-size:28px;
+    color:#fff;
+    border:none;
+}
+.yuan{
+    width:0.06rem;
+    height:0.06rem;
+    background:#fff;
+    border-radius:0.03rem;
+    position:absolute;
+    left:1.27rem;top:0.32rem;
+}
+.yuan1{
+    width:0.06rem;
+    height:0.06rem;
+    background:#fff;
+    border-radius:0.03rem;
+    position:absolute;
+    right:1.27rem;top:0.32rem;
+}
+@media screen and (min-width:320px){
+    html{
+        font-size:42.667px;
+    }
+    .box{
+        font-size:16px;
+    }
+    .sign{
+        font-size:12px;
+    }
+    .writer{
+        font-size:12px;
+    }
+    .input input{
+        font-size:14px;
+    }
+    .input1 input{
+        font-size:14px;
+    }
+    .input2 input{
+        font-size:14px;
+    }
+    .key1{
+        font-size:12px;
+    }
+}
+@media screen and (min-width:360px){
+    html{
+        font-size:48px;
+    }
+    .box{
+        font-size:18px;
+    }
+    .sign{
+        font-size:12px;
+    }
+    .writer{
+        font-size:12px;
+    }
+    .input input{
+        font-size:14px;
+    }
+    .input1 input{
+        font-size:14px;
+    }
+    .input2 input{
+        font-size:14px;
+    }
+    .key1{
+        font-size:12px;
+    }
+}
+@media screen and (min-width:375px){
+    html{
+        font-size:50px;
+    }
+    .box{
+        font-size:18px;
+    }
+    .sign{
+        font-size:12px;
+    }
+    .writer{
+        font-size:12px;
+    }
+    .input input{
+        font-size:14px;
+    }
+    .input1 input{
+        font-size:14px;
+    }
+    .input2 input{
+        font-size:14px;
+    }
+    .key1{
+        font-size:12px;
+    }
+}
+@media screen and (min-width:414px){
+    html{
+        font-size:55.2px;
+    }
+    .box{
+        font-size:20px;
+    }
+    .sign{
+        font-size:14px;
+    }
+    .writer{
+        font-size:14px;
+    }
+    .input input{
+        font-size:16px;
+    }
+    .input1 input{
+        font-size:16px;
+    }
+    .input2 input{
+        font-size:16px;
+    }
+    .key1{
+        font-size:12px;
+    }
+}
+@media screen and (min-width:750px){
+    html{
+        font-size:100px;
+    }
+    .box{
+        font-size:36px;
+    }
+    .sign{
+        font-size:24px;
+    }
+    .writer{
+        font-size:24px;
+    }
+    .input input{
+        font-size:28px;
+    }
+    .input1 input{
+        font-size:28px;
+    }
+    .input2 input{
+        font-size:28px;
+    }
+    .key1{
+        font-size:22px;
+    }
+}
