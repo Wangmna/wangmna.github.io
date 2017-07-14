@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index-min.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body ng-controller="ctrl">
+<div class="zz" ng-show="flg" ng-click="fin()"></div>
+<div class="m-left">
+    <div class="title">
+        <div class="logo">ToDo List</div>
+        <div class="add" ng-click="addList()">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <ul class="left-list">
+        <!--<li class="active">-->
+            <!--<div class="yuan-box">-->
+                <!--<div class="yuan"></div>-->
+            <!--</div>-->
+            <!--<p>列表1</p>-->
+        <!--</li>-->
+        <li ng-class="{'active':$index==index}" ng-repeat="v in todos" ng-click="cname($index)">
+            <div class="yuan-box">
+                <div class="yuan" ng-style="{backgroundColor:v.color}"></div>
+            </div>
+            <p>{{v.title}}</p>
+        </li>
+    </ul>
+</div>
+<div class="m-right">
+    <div class="title">
+        <div class="ss">
+            <input type="text" placeholder="搜所所有">
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="select" ng-show="flg">
+            <div class="jt"></div>
+            <div class="inners">
+                <div class="intitle">
+                    <input type="text" ng-model="changeCom" ng-style="{color:changeColor}">
+                    <h4>项目颜色</h4>
+                    <ul>
+                        <li ng-repeat="c in color" ng-style="{backgroundColor:c,borderColor:c==changeColor?c:''}" ng-click="huan(c)"></li>
+                    </ul>
+                </div>
+                <div class="cz">
+                    <a href="#" class="clears" ng-click="cle()">删除</a>
+                    <div class="qf">
+                        <a href="#" class="qx" ng-click="qxs()">取消</a>
+                        <span class="sx"></span>
+                        <a href="#" class="finish" ng-click="fin()">完成</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="titles">
+            <div class="b-t" ng-style="{color:todos[index].color}">
+                {{todos[index].title}}
+            </div>
+            <div class="b-tr" ng-style="{color:todos[index].color}" ng-click="cShow()">
+                选项
+            </div>
+        </div>
+        <div class="con">
+            <div class="con-title">
+                <div class="sj" ng-class="{'active':isShow}">
+                    <span ng-click="listShow()"></span>
+                </div>
+                已完成，{{listNum}}项
+                <div class="clear" ng-show="isShow" ng-click="clearList()">
+                    清除已完成项
+                </div>
+            </div>
+            <ul class="con-bottom" ng-show="isShow">
+                <!--<li>-->
+                    <!--<div class="status">-->
+                        <!--<span></span>-->
+                    <!--</div>-->
+                    <!--<p>剑荡四方ID黄蜂ifhi</p>-->
+                <!--</li>-->
+                <li ng-repeat="v in todos[index].todol|filter:true">
+                    <div class="status" ng-click="status(v,false)">
+                        <span ng-style="{backgroundColor:todos[index].color,borderColor:todos[index].color}"></span>
+                    </div>
+                    <p>{{v.title}}</p>
+                </li>
+            </ul>
+            <ul class="con-bottoms">
+                <li ng-repeat="v in todos[index].todol|filter:false">
+                    <div class="status" ng-click="status(v,true)">
+                        <span ng-style="{borderColor:todos[index].color}"></span>
+                    </div>
+                    <input type="text" ng-model="v.title">
+                </li>
+            </ul>
+            <div class="new" ng-click="newList()">新建项目...</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
